@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://blenderartists.org/uploads/default/original/4X/5/e/9/5e943043fa5a77a1cd6073b24b3adb2e24dec40e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(172, 220, 227);
+    margin-left: 200px;
+}
+h2 {
+    color: rgb(172, 220, 227);
+    margin-left: 10px;
+}
+
+nav {
+    background-color: rgb(36, 5, 29);
+    box-shadow: 3px 3px 5px rgba(0, green, blue, alpha);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 40px;
+}
+
+nav a.nav {
+    height: 100px;
+    padding: 0 30px;
+    text-decoration: none;
+    margin-top: 5px;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+    background-color: rgb(153, 75, 173);
+    height: 40px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(109, 101, 101, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(62, 18, 52, 0.518);
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar svg {
+    right: 50px; 
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 90px;
+    width: 350px;
+    height: 200px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.image-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 400px; /* Adjusted height for better image display */
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(255, 1, 238);
+}
+
+.image-container img {
+    width: 100%; /* Set image width to fill its container */
+    height: 100%; /* Set image height to fill its container */
+    object-fit: cover;
+}
+
+
+.introduction .quote {
+    flex-grow: 1;
+}
+
+.introduction .quote p {
+    color: black; 
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+footer {
+    background-color: rgb(36, 5, 29);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*Media section*/
+@media(max-width: 800px){
+    .hideOnMobile{  
+        display: none;
+    }
+
+}
+@media(max-width: 400px){
+    .sidebar{  
+        width:100%;
+    }
+
+}
